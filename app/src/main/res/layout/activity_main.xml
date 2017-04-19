@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.callpermission.MainActivity">
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b_call"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/b_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Call"
+        android:text="Call"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ChangePicture"
+        android:text="Change picture"
+        android:layout_below="@+id/b_call"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
